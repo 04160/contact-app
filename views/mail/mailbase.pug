@@ -1,0 +1,14 @@
+extends ../layout
+
+block scripts
+    script(src='/js/mail.js')
+
+block stylesheets
+    link(rel='stylesheet', href='/css/mail.css')
+block content
+    #mail
+        .container
+            .row
+                .col-sm-6 qwtqwt
+                .col-sm-6
+                    include mailEntryForm

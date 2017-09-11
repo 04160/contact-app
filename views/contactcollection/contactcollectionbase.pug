@@ -1,0 +1,15 @@
+extends ../layout
+block scripts
+    script(src='/js/contactcollection.js')
+
+block stylesheets
+    link(rel='stylesheet', href='/css/contact_collection.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+
+block content
+    .container
+        .row
+            .col-md-6
+                include fullinfo
+            .col-md-6
+                include listedcontacts

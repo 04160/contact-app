@@ -1,0 +1,14 @@
+#footer {
+  background-color:#d7d7d7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0 5px 0;
+  .container {
+    .row {
+      .col-sm-6 {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+#mail-entry-form
+    fieldset
+        .field
+            #mail-from
+                label From
+                input#input-from
+                .hint Does not require a valid email address, everything is sent through SMTP user
+            #mail-to
+                label To
+                input#input-to
+                .hint Require a valid email address
+            #mail-subject
+                label Subject
+                input#input-subject
+                .hint A string up to 50 symbols long
+            #mail-text
+                label Text
+                input#input-text
+                .hint A string up to 200 symbols long
+    button#send-mail Send Mail

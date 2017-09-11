@@ -1,0 +1,107 @@
+@import 'main.scss';
+@import 'default_values.scss';
+
+.container {
+  .row {
+    #addContact {
+      margin:0 auto;
+      left: 0;
+      right: 0;
+      box-sizing: border-box;
+      form {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 320px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        > div {
+          position: relative;
+          overflow: hidden;
+          margin: 10px 0 10px 0;
+        }
+        input {
+          width: 100%;
+          border: 2px solid gray;
+          background: none;
+          position: relative;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          height: inherit;
+          //padding: 8px 12px;
+          padding: 13px 10px;
+          outline: 0;
+          &:valid {
+            background-color: white;
+          }
+          &:valid + label {
+            //opacity:0;
+          }
+          &:focus {
+            border-color: #f06d06;
+            //padding: 4px 6px 20px 6px;
+          }
+          &:focus + label {
+            background: #f06d06;
+            opacity: 1;
+            color: white;
+            font-size: 70%;
+            padding: 1px 6px;
+            z-index: 2;
+            text-transform: uppercase;
+            top: 100%;
+            margin-top: -16px;
+          }
+        }
+        label {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          z-index: 222;
+          transition: // not padding
+                  background 0.2s,
+                  color 0.2s,
+                  top 0.2s,
+                  bottom 0.2s,
+                  right 0.2s,
+                  left 0.2s;
+          position: absolute;
+          color: #999;
+          padding: 15px 6px 0 6px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .invalidForm{
+      input {
+        color: $color-error-red;
+        border-color: $color-error-red !important;
+      }
+      label {
+        color: #FFF !important;
+        background-color: $color-error-red !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $break-phone-landscape) {
+  
+}
+@media only screen and (min-width: $break-phone-landscape) and (min-width: $break-tablet) {
+
+}
+@media only screen and (min-width: $break-tablet) and (max-width: $break-monitor) {
+
+}
+@media only screen and (min-width: $break-monitor) {
+  .container {
+    .row {
+      #addContact {
+        width: 700px;
+      }
+    }
+  }
+}

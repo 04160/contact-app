@@ -1,0 +1,13 @@
+extends ../layout
+
+block scripts
+    script(src='/js/newcontact.js')
+    script(src='/js/moment.min.js')
+
+block stylesheets
+    link(rel='stylesheet', href='/css/newcontact.css')
+
+block content
+    .container
+        .row
+            include userentryform

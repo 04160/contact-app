@@ -1,0 +1,35 @@
+{
+  "name": "nodedemo",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Simple node demo",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dstart": "nodemon ./bin/www",
+    "postinstall": "npm rebuild node-sass"
+  },
+  "dependencies": {
+    "ajax": "0.0.4",
+    "body-parser": "~1.16.0",
+    "bootstrap": "^4.0.0-beta",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.0",
+    "express": "~4.14.1",
+    "express-validator": "^3.1.2",
+    "font-awesome": "^4.7.0",
+    "formidable": "^1.1.1",
+    "jquery": "^3.2.1",
+    "moment": "^2.18.1",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.6.6",
+    "morgan": "~1.7.0",
+    "node-sass-middleware": "^0.11.0",
+    "nodemailer": "^3.1.7",
+    "pug": "^2.0.0-rc.3",
+    "sass": "^1.0.0-beta.2",
+    "serve-favicon": "~2.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

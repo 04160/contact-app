@@ -1,0 +1,16 @@
+@import 'main.scss';
+
+#index {
+  .container {
+    .row {
+      h3:after {
+        content: "\A";
+        white-space: pre;
+      }
+      p:after {
+        content: "\A";
+        white-space: pre;
+      }
+    }
+  }
+}

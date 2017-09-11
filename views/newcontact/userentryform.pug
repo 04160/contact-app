@@ -1,0 +1,35 @@
+#addContact
+    form.go-bottom
+        #profile-forename
+            input#input-forename(type='text')
+            label(for="input-forename") Forename
+            //label.secondaryLabel A string between 3 and 36 symbols
+        #profile-surname
+            input#input-surname(type='text')
+            label(for="input-surname") Surname
+            //label.secondaryLabel A string between 3 and 36 symbols
+        #profile-email
+            input#input-email(type='text')
+            label(for="input-email") Email
+            //label.secondaryLabel An email xxx@yyy.zz which can include _ and .
+        #profile-phone
+            input#input-phone(type='text')
+            label(for="input-phone") Phone
+            //label.secondaryLabel 7 to 14 numbers with or without + at the beginning
+        #profile-bday
+            input#input-bday(type='text')
+            label(for="input-bday") Birthday
+            //label.secondaryLabel Numbers in the format of DD.MM.YYYY
+        #profile-location
+            input#input-location(type='text')
+            label(for="input-location") Location
+            //label.secondaryLabel A string of less than 50 symbols, can be empty
+        #profile-occupation
+            input#input-occupation(type='text')
+            label(for="input-occupation") Occupation
+            //label.secondaryLabel A string of less than 50 symbols, can be empty
+        #profile-about
+            input#input-about(type='text')
+            label(for="input-about") About
+        button#btnAddContact Add Contact
+        div.errorMessage Please fill out required fields correctly

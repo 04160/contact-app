@@ -1,0 +1,51 @@
+@import 'default_values.scss';
+
+.header {
+  background-color: $color-very-dark-gray;
+  margin-left: 0;
+  margin-right: 0;
+  .jumbotron {
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: $color-red;
+    .text {
+      margin: 0;
+      text-align: left;
+      display: inline-block;
+      h1 {
+        display: inline-block;
+      }
+      p {
+        display: inline-block;
+      }
+    }
+  }
+  .component-list {
+    text-align: center;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        padding: 3px 10px 3px 10px;
+        font-weight: 600;
+        display: inline-block;
+        @include transition-property(background-color);
+        @include transition-duration(.2s);
+        a {
+          color: $color-light-gray;
+          @include transition-property(color);
+          @include transition-duration(.2s);
+        }
+        &:hover {
+          background-color: $color-light-black;
+          a {
+            text-decoration: none;
+            color:$color-red;
+          }
+        }
+      }
+    }
+  }
+}

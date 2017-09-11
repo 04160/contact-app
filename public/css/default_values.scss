@@ -1,0 +1,25 @@
+$break-phone-portrait: 320px;
+$break-phone-landscape: 480px;
+$break-tablet: 768px;
+$break-monitor: 992px;
+
+$color-red: #db676a;
+$color-dark-red: #d65e64;
+$color-light-gray: #f3f3f3;
+$color-dark-gray: #d3d3d3;
+$color-very-dark-gray: #9b9b9b;
+$color-light-black: #373737;
+$color-error-red: #d5302f;
+
+@mixin transition-property($args...) {
+  -webkit-transition-property: $args;
+  -moz-transition-property: $args;
+  -o-transition-property: $args;
+  transition-property: $args;
+}
+@mixin transition-duration($arg) {
+  -webkit-transition-duration: $arg;
+  -moz-transition-duration: $arg;
+  -o-transition-duration: $arg;
+  transition-duration: $arg;
+}

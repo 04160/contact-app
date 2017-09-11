@@ -1,0 +1,17 @@
+extends layout
+
+block scripts
+    script(src='/js/index.js')
+block stylesheets
+    link(rel='stylesheet', href='/css/index.css')
+block content
+    #index
+        .container
+            .row
+                h3 This is a simple node demo
+                p Features include
+                ol
+                    li contact creation
+                    li contact listing
+                    li email sending to contacts
+            .row
